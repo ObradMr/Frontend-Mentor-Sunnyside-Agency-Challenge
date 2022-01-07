@@ -21,28 +21,7 @@ ul {
 
 a {
   text-decoration: none;
-}
-
-.mockup-mobile {
-  opacity: 0.5;
-  z-index: -10;
-  position: absolute;
-}
-
-.mockup-desktop {
-  opacity: 0.5;
-  z-index: -10;
-  position: absolute;
-  display: none;
-}
-
-@media screen and (min-width: 1440px) {
-  .mockup-mobile {
-    display: none;
-  }
-  .mockup-desktop {
-    display: block;
-  }
+  cursor: pointer;
 }
 
 .header {
@@ -385,4 +364,185 @@ main .testimonials-gallery .image-desktop {
           justify-content: space-between;
   width: 45%;
   margin: 5rem auto 0;
+}
+
+@media (min-width: 768px) {
+  .header {
+    height: 800px;
+  }
+  .header .navbar {
+    margin-top: 1rem;
+    padding: 0;
+    width: 98%;
+  }
+  .header .navbar-logo {
+    width: 9.5rem;
+    margin-left: 1rem;
+  }
+  .header .navbar .menu-layout {
+    display: block;
+    width: 40%;
+  }
+  .header .navbar .menu-layout ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .header .navbar .menu-layout ul a {
+    color: white;
+  }
+  .header .navbar .menu-layout ul a:hover {
+    background-color: white;
+    color: black;
+    font-family: 'Fraunces', serif;
+    text-transform: uppercase;
+    border-radius: 30px;
+    padding: 1rem 1.2rem;
+  }
+  .header .navbar .menu-layout ul a:active {
+    font-family: 'Fraunces', serif;
+    text-transform: uppercase;
+    color: white;
+    background-color: #70cfff;
+  }
+  .header .navbar .hamburger {
+    display: none;
+  }
+  .header .layout {
+    margin-top: 2.9rem;
+  }
+  .header .layout .header-title {
+    font-size: 3rem;
+    letter-spacing: 0.6rem;
+    margin-bottom: 5.2rem;
+  }
+  .header .image-header-desktop {
+    display: block;
+    width: 100%;
+  }
+  .header .image-header-mobile {
+    display: none;
+  }
+  main .our-work {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: (1fr)[3];
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas: "transform-text egg" "stand-out-img stand-out-text" "graphic photography";
+  }
+  main .our-work .description {
+    text-align: start;
+  }
+  main .our-work .description-title {
+    width: 80%;
+    margin: 8.8rem 6rem 0;
+    font-size: 2.2rem;
+  }
+  main .our-work .description-text {
+    margin-top: 1.8rem;
+    width: 62%;
+    margin-left: 9rem;
+  }
+  main .our-work .description-subtitle {
+    font-size: 16px;
+    margin: 2.5rem 9.7rem 0;
+  }
+  main .our-work .egg {
+    background: url(../images/desktop/image-transform.jpg) no-repeat center/cover;
+    height: auto;
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: egg;
+  }
+  main .our-work .transform {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: transform-text;
+  }
+  main .our-work .transform .description-title {
+    width: 60%;
+    margin-left: 9rem;
+  }
+  main .our-work .stand-out {
+    background: url(../images/desktop/image-stand-out.jpg) no-repeat center/cover;
+    height: auto;
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: stand-out-img;
+  }
+  main .our-work .stand-out-text {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: stand-out-text;
+  }
+  main .our-work .stand-out-text .description-text {
+    margin-left: 6rem;
+  }
+  main .our-work .stand-out-text .description-subtitle {
+    margin-left: 6.5rem;
+  }
+  main .our-work .design-text {
+    width: 48%;
+  }
+  main .our-work .graphic {
+    background: url(../images/desktop/image-graphic-design.jpg) no-repeat center/cover;
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    grid-area: graphic;
+  }
+  main .our-work .photography {
+    background: url(../images/desktop/image-photography.jpg) no-repeat center/cover;
+  }
+  main .testimonials-title {
+    margin-top: 9rem;
+    font-size: 1.2rem;
+  }
+  main .testimonials .clients {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 1.1rem;
+  }
+  main .testimonials .client {
+    width: 25%;
+    margin-top: 4rem;
+  }
+  main .testimonials .client-comment {
+    margin: 3.2rem auto 4rem;
+    width: 98%;
+  }
+  main .testimonials-gallery {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 9rem;
+  }
+  main .testimonials-gallery .image-mobile {
+    display: none;
+  }
+  main .testimonials-gallery .image-desktop {
+    height: auto;
+    width: 25%;
+    display: block;
+  }
+  .footer {
+    padding-bottom: 4rem;
+  }
+  .footer-logo, .footer .social-links {
+    width: 12%;
+  }
+  .footer-logo {
+    margin-top: 4rem;
+  }
+  .footer-links {
+    width: 20%;
+  }
 }

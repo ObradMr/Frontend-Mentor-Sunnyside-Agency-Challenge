@@ -1,5 +1,5 @@
 // VARIABLES
-// - Soft red: hsl(7, 99%, 70%)
+$header-link-hover: hsl(200, 100%, 72%);
 $yellow: hsl(51, 100%, 49%);
 $dark-desaturated-cyan: hsl(167, 40%, 24%);
 $dark-blue: hsl(198, 62%, 26%);
@@ -13,7 +13,7 @@ $white: hsl(0, 0%, 100%);
 $footer-cyan: hsl(167, 44%, 70%);
 
 @import 'general';
-@import 'mockup';
+// @import 'mockup';
 
 // header start
 .header {
@@ -136,7 +136,7 @@ $footer-cyan: hsl(167, 44%, 70%);
 
     .image-header-mobile {
         width: 100%;
-        // opacity: 0.5; //temporary
+        
     }
 }
 // header end
@@ -170,6 +170,7 @@ main {
 
         .description {
             background-color: $white;
+            
             
             &-title {
                 width: 86%;
@@ -324,3 +325,6 @@ main {
 
 }
 // footer end
+
+// Desktop layout
+@import 'desktop-media';
