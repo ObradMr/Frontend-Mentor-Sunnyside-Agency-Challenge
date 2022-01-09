@@ -12,7 +12,6 @@ html {
 body {
   font-family: 'Barlow', sans-serif;
   position: relative;
-  width: 100vw;
 }
 
 ul {
@@ -232,10 +231,37 @@ main .our-work .description-text {
 }
 
 main .our-work .description-subtitle {
+  display: inline-block;
+  position: relative;
   text-transform: uppercase;
   margin: 2rem auto 3.7rem;
   font-family: 'Fraunces', serif;
   color: #23303e;
+  z-index: 1;
+}
+
+main .our-work .description-subtitle::after {
+  content: '';
+  z-index: -1;
+  opacity: 0.3;
+  width: 100%;
+  height: 0.5rem;
+  position: absolute;
+  top: 68%;
+  left: 0;
+  border-radius: 1rem;
+}
+
+main .our-work .description-subtitle:active::after {
+  opacity: 0.9;
+}
+
+main .our-work .description .transform-link::after {
+  background-color: #fad400;
+}
+
+main .our-work .description .stand-out-link::after {
+  background-color: #fe7867;
 }
 
 main .our-work .design {
@@ -373,7 +399,6 @@ main .testimonials-gallery .image-desktop {
   .header .navbar {
     margin-top: 1rem;
     padding: 0;
-    width: 98%;
   }
   .header .navbar-logo {
     width: 9.5rem;
@@ -422,6 +447,7 @@ main .testimonials-gallery .image-desktop {
   .header .image-header-desktop {
     display: block;
     width: 100%;
+    height: 100%;
   }
   .header .image-header-mobile {
     display: none;
@@ -491,9 +517,6 @@ main .testimonials-gallery .image-desktop {
   }
   main .our-work .graphic {
     background: url(../images/desktop/image-graphic-design.jpg) no-repeat center/cover;
-    -ms-grid-row: 3;
-    -ms-grid-column: 1;
-    grid-area: graphic;
   }
   main .our-work .photography {
     background: url(../images/desktop/image-photography.jpg) no-repeat center/cover;

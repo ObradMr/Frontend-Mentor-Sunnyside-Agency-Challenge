@@ -7,8 +7,6 @@
         .navbar {
             margin-top: 1rem;
             padding: 0;
-            width: 98%;
-            
 
 
             &-logo {
@@ -65,7 +63,7 @@
         .image-header-desktop {
             display: block;
             width: 100%;
-            
+            height: 100%;
         }
         .image-header-mobile {
             display: none;
@@ -147,7 +145,7 @@
 
             .graphic {
                 background: url(../images/desktop/image-graphic-design.jpg) no-repeat center/cover;
-                grid-area: graphic;
+                // grid-area: graphic;
             }
 
             .photography {
