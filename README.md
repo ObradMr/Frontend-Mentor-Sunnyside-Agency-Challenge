@@ -4,6 +4,6 @@ Regards to all. This is my fourth project from the Frontend Mentor site, and my 
 
 Review what I've done, or visit the links below. Feedback and collaborations are welcome on all projects!
 
-- [Sunnyside Agency](https://obradmr.github.io/Frontend-Mentor-Sunnyside-Agency-Challenge/Frontend%20Mentor%20Sunnyside%20Agency%20Challenge)
+- [Sunnyside Agency](https://obradmr.github.io/Frontend-Mentor-Sunnyside-Agency-Challenge/)
 
 - [Solution]()
